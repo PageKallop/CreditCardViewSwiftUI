@@ -22,14 +22,15 @@ struct ContentView: View {
                     } else {
                         CreditCardFront()
                     }
+                  }
                 }.rotation3DEffect(
                     .degrees(degrees),
                     axis: (x: 1.0, y: 0.0, z: 0.0)
                     
-                    )
-            }
+                )
+            
         }.onTapGesture {
-            withAnimation{
+            withAnimation {
             degrees += 180
             flipped.toggle()
             }
