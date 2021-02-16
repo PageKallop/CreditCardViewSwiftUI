@@ -21,10 +21,51 @@ struct CreditCardView<Content>: View where Content: View {
 struct CreditCardFront: View {
     
     var body: some View {
-        VStack {
-            Text("Front").foregroundColor(Color.white)
+        VStack(alignment: .leading) {
+            
+            HStack(alignment: .top){
+                Image(systemName: "checkmark.circle.fill")
+                    .foregroundColor(Color.white)
+                Spacer()
+                Text("Visa")
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 25))
+                    .fontWeight(.bold)
+            }
+            
+            Spacer()
+            Text("**** **** **** 1234")
+                .foregroundColor(.white)
+                .font(.system(size: 32))
+            Spacer()
+            
+            HStack{
+                VStack(alignment: .leading){
+                    Text("Card Holder Name")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                    Text("Jane Doe")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                }
+                Spacer()
+                VStack {
+                    Text("Expires")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .foregroundColor(.gray)
+                    Text("02/23")
+                        .font(.caption)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                    
+                }
+            }
               } .frame(width: 300, height: 200)
-                .background(LinearGradient(gradient: Gradient(colors: [Color.pink, Color.black]), startPoint: .leading, endPoint: .trailing))
+                 .padding()
+                .background(LinearGradient(gradient: Gradient(colors: [Color.pink, Color.black]), startPoint: .topLeading, endPoint: .bottomTrailing))
                 .cornerRadius(15)
         
     }
@@ -34,7 +75,26 @@ struct CreditCardBack: View {
     
     var body: some View {
         VStack {
-            Text("").foregroundColor(Color.white)
+            
+            Rectangle()
+                .frame(maxWidth: .infinity, maxHeight: 20)
+                .padding([.top])
+            
+                Spacer()
+            HStack {
+                Text("123")
+                    .foregroundColor(.black)
+                    .rotation3DEffect(
+                        .degrees(180),
+                        axis: (x: 0.0, y: 1.0, z: 0.0))
+                    .padding(5)
+                    .frame(width: 100, height: 20)
+                    .background(Color.white)
+                Spacer()
+                        
+                        
+            }.padding()
+            
               } .frame(width: 300, height: 200)
                 .background(LinearGradient(gradient: Gradient(colors: [Color.black, Color.pink]), startPoint: .leading, endPoint: .trailing))
                 .cornerRadius(15)
