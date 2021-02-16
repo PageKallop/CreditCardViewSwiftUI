@@ -20,6 +20,9 @@ struct CreditCardView<Content>: View where Content: View {
 
 struct CreditCardFront: View {
     
+    let name: String
+    let expires: String
+    
     var body: some View {
         VStack(alignment: .leading) {
             
@@ -45,7 +48,7 @@ struct CreditCardFront: View {
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
-                    Text("Jane Doe")
+                    Text(name)
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -56,7 +59,7 @@ struct CreditCardFront: View {
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.gray)
-                    Text("02/23")
+                    Text(expires)
                         .font(.caption)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -73,6 +76,8 @@ struct CreditCardFront: View {
 
 struct CreditCardBack: View {
     
+    let cvv: String
+    
     var body: some View {
         VStack {
             
@@ -82,7 +87,7 @@ struct CreditCardBack: View {
             
                 Spacer()
             HStack {
-                Text("123")
+                Text(cvv)
                     .foregroundColor(.black)
                     .rotation3DEffect(
                         .degrees(180),
@@ -105,6 +110,6 @@ struct CreditCardBack: View {
 
 struct CreditCardView_Previews: PreviewProvider {
     static var previews: some View {
-        CreditCardView<CreditCardBack>(content: { CreditCardBack() })
+        CreditCardView<CreditCardBack>(content: { CreditCardBack(cvv: "123") })
     }
 }
