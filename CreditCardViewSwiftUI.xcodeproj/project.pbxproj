@@ -14,6 +14,7 @@
 		C03943E625D72A9E00DA8F36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C03943E525D72A9E00DA8F36 /* Preview Assets.xcassets */; };
 		C03943E925D72A9E00DA8F36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C03943E725D72A9E00DA8F36 /* LaunchScreen.storyboard */; };
 		C03943F325D72B2500DA8F36 /* CreditCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03943F225D72B2500DA8F36 /* CreditCardView.swift */; };
+		C0F4AD0425DC2822003BB9FC /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F4AD0325DC2822003BB9FC /* TextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C03943E825D72A9E00DA8F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C03943EA25D72A9E00DA8F36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C03943F225D72B2500DA8F36 /* CreditCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardView.swift; sourceTree = "<group>"; };
+		C0F4AD0325DC2822003BB9FC /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				C03943E025D72A9D00DA8F36 /* ContentView.swift */,
+				C0F4AD0325DC2822003BB9FC /* TextFieldView.swift */,
 				C03943F225D72B2500DA8F36 /* CreditCardView.swift */,
 			);
 			name = View;
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C03943DD25D72A9D00DA8F36 /* AppDelegate.swift in Sources */,
+				C0F4AD0425DC2822003BB9FC /* TextFieldView.swift in Sources */,
 				C03943DF25D72A9D00DA8F36 /* SceneDelegate.swift in Sources */,
 				C03943E125D72A9D00DA8F36 /* ContentView.swift in Sources */,
 				C03943F325D72B2500DA8F36 /* CreditCardView.swift in Sources */,
